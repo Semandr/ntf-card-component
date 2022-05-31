@@ -12,9 +12,6 @@
 html {
   font-size: 62.5%;
 }
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-}
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
@@ -32,10 +29,6 @@ a {
 }
 a:not([class]) {
   text-decoration-skip-ink: auto;
-}
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
 }
 img,
 picture {
