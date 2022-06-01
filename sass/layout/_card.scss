@@ -1,0 +1,75 @@
+.card {
+  background-color: var(--clr-secondary-medium);
+  box-shadow: 1rem 1rem 4rem rgba($color: #000000, $alpha: 1);
+  max-width: 35rem;
+  border-radius: calc(1rem + 1vh);
+  padding: calc(1rem + 0.8vw);
+}
+.cryptocurrency {
+  display: flex;
+  flex-direction: column;
+  &__picture-box {
+    overflow: hidden;
+    border-radius: calc(0.5rem + 0.3vw);
+    margin-bottom: calc(1rem + 2vh);
+    object-fit: cover;
+  }
+
+  &__title {
+    font-size: var(--fz-xl);
+    font-weight: var(--fw-medium);
+    margin-bottom: 1.5rem;
+  }
+  &__link {
+    color: var(--clr-white);
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: var(--clr-primary-2);
+    }
+  }
+
+  &__logo {
+  }
+
+  &__value {
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--clr-primary-1);
+  font-weight: var(--fw-light);
+}
+.section {
+  &__suggest {
+  }
+}
+.suggest {
+  &__text {
+  }
+
+  &__info {
+  }
+
+  &__offer {
+  }
+
+  &__icon {
+  }
+
+  &__time {
+  }
+}
+.footer {
+  &__picture-box {
+  }
+}
+.author {
+  &__image {
+  }
+
+  &__text {
+  }
+}

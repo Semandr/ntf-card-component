@@ -1,1 +1,18 @@
-
+:root {
+  // colors
+  --clr-primary-1: hsl(215, 51%, 70%);
+  --clr-primary-2: hsl(178, 100%, 50%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-secondary-dark: hsl(217, 54%, 11%);
+  --clr-secondary-medium: hsl(216, 50%, 16%);
+  --clr-secondary-soft: hsl(215, 32%, 27%);
+  // font-size
+  --fz-s: calc(0.8rem + 0.5vw);
+  --fz-m: calc(1rem + 0.55vw);
+  --fz-l: calc(1.2rem + 0.5vw);
+  --fz-xl: calc(1.6rem + 0.5vw);
+  // font-weights
+  --fw-light: 300;
+  --fw-medium: 400;
+  --fw-bold: 600;
+}

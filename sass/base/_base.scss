@@ -1,10 +1,10 @@
 *,
 *::before,
 *::after {
-  animation-duration: 0.01ms !important;
-  animation-iteration-count: 1 !important;
-  transition-duration: 0.01ms !important;
-  scroll-behavior: auto !important;
+  // animation-duration: 0.01ms !important;
+  // animation-iteration-count: 1 !important;
+  // transition-duration: 0.01ms !important;
+  // scroll-behavior: auto !important;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -17,6 +17,7 @@ body {
   text-rendering: optimizeSpeed;
   font-family: "Outfit", sans-serif;
   line-height: 1.5;
+  font-size: var(--fz-m);
 }
 
 ul,
