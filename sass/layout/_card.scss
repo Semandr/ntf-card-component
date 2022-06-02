@@ -8,17 +8,12 @@
 .cryptocurrency {
   display: flex;
   flex-direction: column;
-  &__picture-box {
-    overflow: hidden;
-    border-radius: calc(0.5rem + 0.3vw);
-    margin-bottom: calc(1rem + 2vh);
-    object-fit: cover;
-  }
 
   &__title {
     font-size: var(--fz-xl);
     font-weight: var(--fw-medium);
     margin-bottom: 1.5rem;
+    letter-spacing: 0.3px;
   }
   &__link {
     color: var(--clr-white);
@@ -26,12 +21,6 @@
     &:hover {
       color: var(--clr-primary-2);
     }
-  }
-
-  &__logo {
-  }
-
-  &__value {
   }
 }
 
@@ -41,35 +30,95 @@
   align-items: center;
   color: var(--clr-primary-1);
   font-weight: var(--fw-light);
+  letter-spacing: 0.3px;
+  padding-bottom: calc(1.2rem + 1vh);
+  border-bottom: 0.5px solid rgba(hsl(215, 51%, 70%), 0.2);
 }
-.section {
-  &__suggest {
-  }
-}
+
 .suggest {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
   &__text {
+    margin-bottom: calc(1rem + 0.8vh);
   }
 
   &__info {
+    font-weight: var(--fw-medium);
+    font-size: var(--fz-s);
+    color: var(--clr-primary-2);
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: calc(0.3rem + 0.3vw);
   }
 
   &__offer {
-  }
-
-  &__icon {
-  }
-
-  &__time {
+    display: flex;
+    align-items: center;
+    gap: calc(0.3rem + 0.1vw);
+    font-weight: var(--fw-light);
   }
 }
 .footer {
+  font-weight: var(--fw-light);
+  font-size: var(--fz-s);
+  color: var(--clr-primary-1);
+  display: flex;
+  align-items: center;
+  gap: calc(1rem + 0.5vw);
+  padding: calc(1rem + 1vh) 0 calc(1rem + 0.7vh);
   &__picture-box {
+    height: calc(2rem + 1vh);
   }
 }
 .author {
   &__image {
+    height: 100%;
+    border: 1px solid var(--clr-white);
+    border-radius: 50%;
   }
+  &__link {
+    color: var(--clr-white);
+    transition: all 0.3s ease-in;
+    &:hover {
+      color: var(--clr-primary-2);
+    }
+  }
+}
+.picture-box {
+  border-radius: calc(0.5rem + 0.3vw);
+  margin-bottom: calc(1rem + 2vh);
 
-  &__text {
+  &__container {
+    position: relative;
+    width: 32rem;
+    height: 28rem;
+    overflow: hidden;
+    border-radius: 1rem;
   }
+}
+.picture-box:hover .picture-box__container .picture-box__image {
+  transition: all 0.7s ease;
+  transform: scale(1.1);
+  cursor: pointer;
+  filter: hsla(215, 52%, 70%, 0.505);
+}
+.picture_hover {
+  transition: all 0.5s;
+}
+.picture-box:hover .picture_hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: hsla(215, 52%, 70%, 0.7);
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }

@@ -10,9 +10,23 @@
   --fz-s: calc(0.8rem + 0.5vw);
   --fz-m: calc(1rem + 0.55vw);
   --fz-l: calc(1.2rem + 0.5vw);
-  --fz-xl: calc(1.6rem + 0.5vw);
+  --fz-xl: calc(1.5rem + 0.5vh);
   // font-weights
   --fw-light: 300;
   --fw-medium: 400;
   --fw-bold: 600;
+  // large screens
+  @media screen and (min-width: 1441px) {
+    --fz-s: calc(0.6rem + 0.5vw);
+    --fz-m: calc(0.8rem + 0.55vw);
+    --fz-l: calc(1rem + 0.5vw);
+    --fz-xl: calc(1.2rem + 0.5vh);
+  }
+  // mobile
+  @media screen and (max-width: 976px) {
+    --fz-s: calc(1rem + 1vw);
+    --fz-m: calc(1.2rem + 1vw);
+    --fz-l: calc(1.5rem + 1vw);
+    --fz-xl: calc(1.8rem + 1vh);
+  }
 }

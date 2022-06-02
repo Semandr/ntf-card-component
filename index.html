@@ -19,13 +19,17 @@
     <title>Frontend Mentor | NFT preview card component</title>
   </head>
   <body> 
-
     <div class="container">
       <div class="card cryptocurrency">
         <header class="header">
-          <picture class="cryptocurrency__picture-box">
-            <img src="./images/image-equilibrium.jpg" alt="image of cryptocurrency" class="cryptocurrency__image">
-          </picture>
+          <div class="picture-box">
+            <picture class="picture-box__container">
+              <img src="./images/image-equilibrium.jpg" alt="image of cryptocurrency" class="picture-box__image"> 
+              <div class="picture_hover">
+                <img class="picture_hover-icon" src="./images/icon-view.svg" alt=""> 
+              </div>
+            </picture>         
+          </div>
           <h1 class="title cryptocurrency__title">
             <a href="#" class="cryptocurrency__link">Equilibrium #3429</a>
           </h1>
@@ -33,31 +37,28 @@
         <main class="main">
           <section class="section section__suggest suggest">
             <p class="suggest__text">Our Equilibrium collection promotes balance and calm.</p>
-            <div class="suggest__info">
-              <div class="cryptocurrency__logo">
-                <img src="" alt=""></div>
-              <div class="cryptocurrency__value">0.041 ETH</div>
-            </div>
-            <div class="suggest__offer">
-              <img class="suggest__icon" src="" alt="" >
-              <div class="suggest__time">3 days left</div>
-            </div>
+            <div class="suggest__container">
+              <div class="suggest__info">
+                <div class="cryptocurrency__logo">
+                  <img src="images/icon-ethereum.svg" alt="icon of etherium">
+                </div>
+                <div class="cryptocurrency__value">0.041 ETH</div>
+              </div>
+              <div class="suggest__offer">
+                <img class="suggest__icon" src="images/icon-clock.svg" alt="icon of clock" >
+                <div class="suggest__time">3 days left</div>
+              </div>
+            </div>       
           </section>
         </main>
         <footer class="footer">
           <picture class="footer__picture-box author">
-            <img src="" alt="" class="author__image">
+            <img src="images/image-avatar.png" alt="photo of author" class="author__image">
           </picture>
-          <p class="author__text">Creation of <a href="mailto:juleswyvern@someserver.com">Jules Wyvern</a></p>
+          <p class="author__text">Creation of <a class="author__link" href="mailto:juleswyvern@someserver.com">Jules Wyvern</a></p>
         </footer>
       </div>
     </div>
-
-    <!-- <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>. -->
     </div>
   </body>
 </html>
